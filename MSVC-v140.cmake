@@ -4,6 +4,8 @@ add_definitions(-DUNICODE -D_UNICODE)
 
 set(CMAKE_C_FLAGS_DEBUG "/MD /Zi /Ob0 /Od")
 set(CMAKE_CXX_FLAGS_DEBUG "/MD /Zi /Ob0 /Od")
+set(CMAKE_C_FLAGS_RELEASE "/MD /O2 /Ob2 /DNDEBUG /GL")
+set(CMAKE_CXX_FLAGS_RELEASE "/MD /O2 /Ob2 /DNDEBUG /GL")
 string(APPEND CMAKE_CXX_FLAGS " /Zc:sizedDealloc-") # /GS-
 
 if(STL70)
