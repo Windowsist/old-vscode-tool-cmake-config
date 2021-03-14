@@ -33,7 +33,7 @@
     }
   },
   {
-    "name": "MSVC v142",
+    "name": "MSVC v142 ... (cppwinrt)",
     "preferredGenerator": {
       "name": "NMake Makefiles"
     },
