@@ -6,8 +6,8 @@ set(CMAKE_C_FLAGS_DEBUG "/MD /Zi /Ob0 /Od /RTC1")
 set(CMAKE_CXX_FLAGS_DEBUG "/MD /Zi /Ob0 /Od /RTC1")
 set(CMAKE_C_FLAGS_RELEASE "/MD /O2 /Ob2 /DNDEBUG /GL")
 set(CMAKE_CXX_FLAGS_RELEASE "/MD /O2 /Ob2 /DNDEBUG /GL")
-string(APPEND CMAKE_CXX_FLAGS " /std:c++17 /await /bigobj")
 set(CMAKE_CXX_STANDARD 17)
+string(APPEND CMAKE_CXX_FLAGS " /std:c++17 /await /bigobj")
 
 link_libraries("WindowsApp.lib")
 
