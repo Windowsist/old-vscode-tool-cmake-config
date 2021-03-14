@@ -1,5 +1,5 @@
-if(NOT MSVC-v140-proc)
-set(MSVC-v140-proc TRUE)
+if(NOT MSVC-v140_CMAKE)
+set(MSVC-v140_CMAKE TRUE)
 
 set(CMAKE_C_COMPILER_FORCED TRUE)
 set(CMAKE_CXX_COMPILER_FORCED TRUE)
@@ -44,4 +44,4 @@ link_directories(
     "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\Lib\\um"
     )
 
-endif(NOT MSVC-v140-proc)
+endif(NOT MSVC-v140_CMAKE)
