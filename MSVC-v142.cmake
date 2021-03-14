@@ -8,6 +8,8 @@ set(CMAKE_C_FLAGS_RELEASE "/MD /O2 /Ob2 /DNDEBUG /GL")
 set(CMAKE_CXX_FLAGS_RELEASE "/MD /O2 /Ob2 /DNDEBUG /GL")
 string(APPEND CMAKE_CXX_FLAGS " /std:c++17 /await /bigobj")
 
+link_libraries("WindowsApp.lib")
+
 include_directories(SYSTEM
     "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.28.29910\\include"
     "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\Include\\ucrt"
@@ -21,5 +23,3 @@ link_directories(
     "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\Lib\\ucrt"
     "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\Lib\\um"
     )
-
-link_libraries("WindowsApp.lib")
