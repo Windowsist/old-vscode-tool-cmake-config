@@ -1,13 +1,16 @@
+if(NOT MSVC-v142-proc)
+set(MSVC-v142-proc TRUE)
+
 set(CMAKE_C_COMPILER_FORCED TRUE)
 set(CMAKE_CXX_COMPILER_FORCED TRUE)
 add_definitions(-DUNICODE -D_UNICODE)
 
 set(CMAKE_C_FLAGS_DEBUG "/MD /Zi /Ob0 /Od /RTC1")
 set(CMAKE_CXX_FLAGS_DEBUG "/MD /Zi /Ob0 /Od /RTC1")
-set(CMAKE_C_FLAGS_RELEASE "/MD /O2 /Ob2 /DNDEBUG /GL")
-set(CMAKE_CXX_FLAGS_RELEASE "/MD /O2 /Ob2 /DNDEBUG /GL")
+string(APPEND CMAKE_C_FLAGS_RELEASE " /DNDEBUG /GL")
+string(APPEND CMAKE_CXX_FLAGS_RELEASE " /DNDEBUG /GL")
+string(APPEND CMAKE_CXX_FLAGS " /await /bigobj")
 set(CMAKE_CXX_STANDARD 17)
-string(APPEND CMAKE_CXX_FLAGS " /std:c++17 /await /bigobj")
 
 link_libraries("WindowsApp.lib")
 
@@ -24,3 +27,5 @@ link_directories(
     "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\Lib\\ucrt"
     "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\Lib\\um"
     )
+
+endif(NOT MSVC-v142-proc)
