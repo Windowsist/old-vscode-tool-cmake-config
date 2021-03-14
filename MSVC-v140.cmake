@@ -13,30 +13,30 @@ unset(STL70)
 
 add_definitions(-D_STL70_ -D_STATIC_CPPLIB)
 link_libraries("ntstc_msvcrt.lib")
-set(STL_INC "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\include\\api\\Crt\\stl70")
+set(STL_INC "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.0.24245.0\\include\\api\\Crt\\stl70")
 
 else() # STL60
 
 string(APPEND CMAKE_C_FLAGS " /Zc:wchar_t-")
 string(APPEND CMAKE_CXX_FLAGS " /Zc:wchar_t-")
-set(STL_INC "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\include\\api\\Crt\\stl60")
+set(STL_INC "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.0.24245.0\\include\\api\\Crt\\stl60")
 
 endif(STL70)
 
 include_directories(SYSTEM
-    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\include\\Crt"
+    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.0.24245.0\\include\\Crt"
     ${STL_INC}
-    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\include\\atl71"
-    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\include\\mfc42"
-    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\Include\\um"
-    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\Include\\shared"
+    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.0.24245.0\\include\\atl71"
+    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.0.24245.0\\include\\mfc42"
+    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\Include\\um"
+    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\Include\\shared"
     )
 
 unset(STL_INC)
 
 link_directories(
-    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\lib\\Crt"
-    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\lib\\ATL"
-    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\lib\\Mfc"
-    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\Lib\\um"
+    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.0.24245.0\\lib\\Crt"
+    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.0.24245.0\\lib\\ATL"
+    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.0.24245.0\\lib\\Mfc"
+    "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\Lib\\um"
     )

@@ -1,21 +1,21 @@
 [
-  {
-    "name": "GCC 8.1.0",
-    "preferredGenerator": {
-      "name": "MinGW Makefiles"
-    },
-    "environmentVariables": {
-      "CMT_MINGW_PATH": "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\mingw64\\bin"
-    },
-    "toolchainFile": "C:\\Users\\Windowsist\\_vscode\\GCC-8.1.0.cmake"
-  },
+  // {
+  //   "name": "GCC 8.1.0",
+  //   "preferredGenerator": {
+  //     "name": "MinGW Makefiles"
+  //   },
+  //   "environmentVariables": {
+  //     "CMT_MINGW_PATH": "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\mingw64\\bin"
+  //   },
+  //   "toolchainFile": "C:\\Users\\Windowsist\\_vscode\\GCC-8.1.0.cmake"
+  // },
   {
     "name": "MSVC v140 ... (STL60)",
     "preferredGenerator": {
       "name": "NMake Makefiles"
     },
     "environmentVariables": {
-      "Path": "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\bin;C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\bin;${env:Path}"
+      "Path": "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\bin;C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.0.24245.0\\bin;${env:Path}"
     },
     "toolchainFile": "C:\\Users\\Windowsist\\_vscode\\.config\\MSVC-v140.cmake"
   },
@@ -25,11 +25,21 @@
       "name": "NMake Makefiles"
     },
     "environmentVariables": {
-      "Path": "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\bin;C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\bin;${env:Path}"
+      "Path": "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\bin;C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.0.24245.0\\bin;${env:Path}"
     },
     "toolchainFile": "C:\\Users\\Windowsist\\_vscode\\.config\\MSVC-v140.cmake",
     "cmakeSettings": {
       "STL70": true
     }
+  },
+  {
+    "name": "MSVC v142",
+    "preferredGenerator": {
+      "name": "NMake Makefiles"
+    },
+    "environmentVariables": {
+      "Path": "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\SDK\\10.0.19041.0\\bin;C:\\Users\\Windowsist\\AppData\\Local\\Programs\\Visual Studio\\MSVC\\14.28.29910\\bin;${env:Path}"
+    },
+    "toolchainFile": "C:\\Users\\Windowsist\\_vscode\\.config\\MSVC-v142.cmake"
   }
 ]
