@@ -1,14 +1,15 @@
 [
-  // {
-  //   "name": "GCC 8.1.0",
-  //   "preferredGenerator": {
-  //     "name": "MinGW Makefiles"
-  //   },
-  //   "environmentVariables": {
-  //     "CMT_MINGW_PATH": "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\mingw64\\bin"
-  //   },
-  //   "toolchainFile": "C:\\Users\\Windowsist\\_vscode\\GCC-8.1.0.cmake"
-  // },
+/* 
+  {
+    "name": "GCC 8.1.0",
+    "preferredGenerator": {
+      "name": "MinGW Makefiles"
+    },
+    "environmentVariables": {
+      "CMT_MINGW_PATH": "C:\\Users\\Windowsist\\AppData\\Local\\Programs\\mingw64\\bin"
+    },
+    "toolchainFile": "C:\\Users\\Windowsist\\_vscode\\GCC-8.1.0.cmake"
+  },
   {
     "name": "MSVC v140 ... (STL60)",
     "preferredGenerator": {
@@ -32,6 +33,7 @@
       "STL70": true
     }
   },
+ */
   {
     "name": "MSVC v142 ... (cppwinrt)",
     "preferredGenerator": {
